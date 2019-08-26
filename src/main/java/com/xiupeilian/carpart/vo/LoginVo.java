@@ -9,6 +9,24 @@ public class LoginVo {
     private String loginName;
     private String password;
     private String email;
+    private Integer companyId;
+    private String username;
+
+    public Integer getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(Integer companyId) {
+        this.companyId = companyId;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
     public String getEmail() {
         return email;

@@ -9,8 +9,5 @@
         <module name="carpart" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="carpart" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

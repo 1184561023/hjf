@@ -199,4 +199,24 @@
     select * from sys_user where login_name=#{loginName} and email=#{email} and user_status=0
 
   </select>
+
+  <select id="findUserByCompanyIdAndUsername" parameterType="loginvo" resultMap="BaseResultMap">
+
+    select * from sys_user where company_id=#{companyId} and username like '%${username}%'
+  </select>
+    <select id="findUserByLoginName" parameterType="string" resultMap="BaseResultMap">
+    select * from sys_user where login_name=#{loginName}
+
+
+  </select>
+
+    <select id="findUserByPhone" parameterType="string" resultMap="BaseResultMap">
+
+    select * from sys_user where phone=#{value}
+  </select>
+
+    <select id="findUserByEmail" parameterType="string" resultMap="BaseResultMap">
+        select * from sys_user where email=#{value}
+    </select>
+
 </mapper>
